@@ -23,7 +23,7 @@
                 xhr.open('GET', '/info?sn=' + encodeURIComponent(boarding.value), true);
                 xhr.onload = function(evt) {
                     var info = JSON.parse(xhr.responseText);
-                    var summary = '没有该车站的信息，车站名称请以<a href=http://www.12306.cn/mormhweb/zxdt/tlxw_tdbtz19.html>各站互联网起售时间公布</a>为准'
+                    var summary = '没有该车站的信息，车站名称请以<a href=http://www.12306.cn/mormhweb/zxdt/tlxw_tdbtz26.html>各站互联网起售时间公布</a>为准'
                     if (info['t']) {
                         summary = '<ul><li>'
                         summary += (parseInt(info['t'])) > (new Date()).getHours()
