@@ -3,7 +3,7 @@
 from bottle import route, default_app, request, response, template, TEMPLATE_PATH
 import os, sqlite3
 
-TEMPLATE_PATH.append(os.path.join(os.environ['OPENSHIFT_GEAR_DIR'], 'runtime/repo/wsgi/views/'))
+TEMPLATE_PATH.append(os.path.join(os.environ['OPENSHIFT_HOMEDIR'], 'runtime/repo/wsgi/views/'))
 c = sqlite3.connect(os.path.join(os.getenv('OPENSHIFT_DATA_DIR'), 'tnd.db'))
 
 @route('/info')
