@@ -10,6 +10,7 @@
     "url": "http://github.com/l-hedgehog"
   },
   "installs_allowed_from": [
-    "https://marketplace.mozilla.org"
+    "https://marketplace.mozilla.org",
+    "https://marketplace.firefox.com"
   ]
 }
